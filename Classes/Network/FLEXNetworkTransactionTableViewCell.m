@@ -64,6 +64,8 @@ NSString *const kFLEXNetworkTransactionCellIdentifier = @"kFLEXNetworkTransactio
 - (void)layoutSubviews
 {
     [super layoutSubviews];
+    
+    if (self.transaction == nil) { return; }
 
     const CGFloat kVerticalPadding = 8.0;
     const CGFloat kLeftPadding = 10.0;
